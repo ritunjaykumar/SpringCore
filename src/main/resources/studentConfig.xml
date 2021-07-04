@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--    this is student's bean-->
+    <!--    using setter method-->
+    <!--<bean class="com.softgyan.first.Student" name="student">
+        <property name="studentId">
+            <value>215</value>
+        </property>
+
+        <property name="studentName">
+            <value>Ritu</value>
+        </property>
+        <property name="studentAddress">
+            <value>Delhi</value>
+        </property>
+    </bean>-->
+
+    <!--    using value tag-->
+    <!--<bean class="com.softgyan.first.Student" name="student">
+        <property name="studentId" value="145"/>
+        <property name="studentName" value="richa"/>
+        <property name="studentAddress" value="address"/>
+    </bean>
+-->
+
+    <!--    using p schema-->
+
+    <bean name="student" class="com.softgyan.first.Student" p:studentId="47" p:studentName="arun" p:studentAddress="abad"/>
+
+
+
+
+
+
+</beans>
