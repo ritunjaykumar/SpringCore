@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--    inject value using constructor-->
+    <bean class="com.softgyan.constructor.Person" name="person">
+        <constructor-arg value="142" type="int"/>
+        <constructor-arg value="Ritunjay kumar"/>
+        <constructor-arg  ref="certificate"/>
+
+    </bean>
+
+
+    <!--<bean name="certificate" class="com.softgyan.constructor.Identity">
+        <constructor-arg value="152"/>
+    </bean>-->
+    <!--    using c schema-->
+    <bean name="certificate" class="com.softgyan.constructor.Identity" c:id="125"/>
+
+
+</beans>
