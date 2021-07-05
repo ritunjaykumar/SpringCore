@@ -15,5 +15,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <bean class="com.softgyan.annotation.Address" name="address"
           p:street="agua" p:city="mumbai"/>
+    <bean class="com.softgyan.annotation.Address" name="address1"
+          p:street="bahgua" p:city="hello"/>
     <bean name="employee" class="com.softgyan.annotation.Employee"/>
 </beans>
