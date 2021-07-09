@@ -19,6 +19,9 @@ public class DemoSpel {
     @Value("#{new java.lang.String('Ritunjay')}")
     private String name;
 
+    @Value("#{ 8>2 }")
+    private boolean isActive;
+
     public DemoSpel() {
     }
 
@@ -47,6 +50,7 @@ public class DemoSpel {
                 ", z=" + z +
                 ", e=" + e +
                 ", name='" + name + '\'' +
+                ", isActive=" + isActive +
                 '}';
     }
 }
