@@ -1,4 +1,4 @@
-package com.softgyan.standalon.collection;
+package com.softgyan.standalone.collection;
 
 import java.util.List;
 import java.util.Map;

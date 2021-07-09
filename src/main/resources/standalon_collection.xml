@@ -33,7 +33,7 @@ http://www.springframework.org/schema/util/spring-util-3.0.xsd">
         <prop key="username">74185296</prop>
         <prop key="password">abc</prop>
     </util:properties>
-    <bean class="com.softgyan.standalon.collection.Person" name="person">
+    <bean class="com.softgyan.standalone.collection.Person" name="person">
         <property name="friends" ref="mybestfriend"/>
         <property name="feeStructures" ref="fees"/>
         <property name="properties" ref="dbConfig"/>

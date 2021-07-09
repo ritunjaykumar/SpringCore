@@ -1,4 +1,4 @@
-package com.softgyan.standalon.collection;
+package com.softgyan.standalone.collection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
