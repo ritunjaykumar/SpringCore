@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component("student1")
-@Scope("prototype")
+@Component("student1") // define configuration using annotation class
+@Scope("prototype") //define scope of class
 public class Student {
     @Value("Ritu")
     private String studentName;
