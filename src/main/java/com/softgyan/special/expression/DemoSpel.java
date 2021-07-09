@@ -10,12 +10,22 @@ public class DemoSpel {
     @Value("#{454-45/8}")
     private int y;
 
+    @Value("#{ T(java.lang.Math).sqrt(9)}")
+    private double z;
+
+    @Value("#{T(java.lang.Math).PI}")
+    private double e;
+
+    @Value("#{new java.lang.String('Ritunjay')}")
+    private String name;
+
     public DemoSpel() {
     }
 
     public int getX() {
         return x;
     }
+
 
     public void setX(int x) {
         this.x = x;
@@ -34,6 +44,9 @@ public class DemoSpel {
         return "DemoSpel{" +
                 "x=" + x +
                 ", y=" + y +
+                ", z=" + z +
+                ", e=" + e +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
